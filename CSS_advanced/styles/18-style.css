@@ -1,4 +1,4 @@
-/* Universal box-sizing */
+/* Apply universal box-sizing */
 *,
 *::before,
 *::after {
@@ -11,35 +11,42 @@ html {
   font-size: 62.5%;
 }
 
-/* CSS Variables */
+/* Define CSS variables */
 :root {
+  /* Colors */
   --color-primary: #d73953;
   --color-black: #090909;
   --color-white: #ffffff;
   --color-light-grey: #f3f3f3;
   --color-dark-grey: #353535;
 
+  /* Typography */
   --font-family-base: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --font-family-title: Raleway, "Helvetica Neue", Helvetica, Arial, sans-serif;
 
+  /* Font sizes */
   --font-size-small: 1.2rem;
   --font-size-medium: 1.6rem;
   --font-size-large: 1.8rem;
   --font-size-x-large: 2.3rem;
   --font-size-xx-large: 4.8rem;
 
+  /* Font weights */
   --font-weight-regular: 400;
   --font-weight-bold: 700;
 
+  /* Line heights */
   --line-height-small: 1.2;
   --line-height-base: 1.5;
   --line-height-big: 1.8;
 
+  /* Section layout variables */
   --section-header-align: center;
   --section-tagline-transform: uppercase;
   --section-title-margin: 0;
   --section-title-color: var(--color-black);
 
+  /* Padding variables */
   --section-padding: 5rem 0;
   --section-header-padding: 0 0 3rem;
   --section-body-padding: 0 0 3rem;
@@ -47,9 +54,10 @@ html {
   --section-footer-align: center;
   --footer-padding: 5rem 0 1rem;
 
+  /* Text color */
   --text-color: var(--color-black);
 
-  /* Task 18 - navbar variables */
+  /* Navbar custom variables */
   --nav-item-font-family: var(--font-family-title);
   --nav-item-font-weight: var(--font-weight-bold);
   --nav-item-font-size: var(--font-size-medium);
@@ -59,22 +67,25 @@ html {
   --nav-item-link-hover: var(--color-primary);
 }
 
-/* Links */
+/* Anchor link states */
 a:link {
   color: var(--text-color);
   text-decoration: none;
 }
+
 a:visited {
   font-style: italic;
 }
+
 a:hover {
   text-decoration: underline;
 }
+
 a:active {
   background-color: var(--color-light-grey);
 }
 
-/* Body */
+/* Base body styles */
 body {
   color: var(--text-color);
   font-family: var(--font-family-base);
@@ -83,21 +94,23 @@ body {
   line-height: var(--line-height-base);
 }
 
-/* Headings */
+/* Heading styles */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-family-title);
   font-weight: var(--font-weight-bold);
 }
 
-/* Hidden text */
+/* Visually hidden elements */
 .visually-hidden {
   display: none;
 }
 
-/* Tagline + category */
+/* Category card text */
 .card-category {
   color: var(--color-primary);
 }
+
+/* Section tagline styles */
 .section-tagline {
   color: var(--color-primary);
   font-family: var(--font-family-title);
@@ -105,7 +118,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: var(--font-weight-bold);
 }
 
-/* Section title */
+/* Section title styles */
 .section-title {
   font-family: var(--font-family-title);
   font-size: var(--font-size-xx-large);
@@ -114,38 +127,45 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--section-title-color);
 }
 
-/* Layout */
+/* Section layout */
 .section {
   padding: var(--section-padding);
 }
+
+/* Section header styling */
 .section-header {
   text-align: var(--section-header-align);
   padding: var(--section-header-padding);
 }
+
+/* Section body styling */
 .section-body {
   padding: var(--section-body-padding);
 }
+
+/* Section footer styling */
 .section-footer {
   padding: var(--section-footer-padding);
   text-align: var(--section-footer-align);
 }
+
+/* Footer class styling (not the footer tag!) */
 .footer {
   padding: var(--footer-padding);
 }
+
+/* Container layout */
 .container {
   width: 960px;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* === Task 18 Navbar === */
-
-/* navbar menu to right */
+/* Navbar customization */
 .navbar-menu {
   float: right;
 }
 
-/* nav reset */
 nav {
   margin: 0;
   padding: 0;
@@ -153,7 +173,6 @@ nav {
   text-align: center;
 }
 
-/* nav-item */
 nav .nav-item {
   font-family: var(--nav-item-font-family);
   font-weight: var(--nav-item-font-weight);
@@ -163,13 +182,11 @@ nav .nav-item {
   margin: var(--nav-item-margin);
 }
 
-/* nav-link */
 nav .nav-link {
   display: block;
   padding: 0 var(--section-padding);
 }
 
-/* hover color */
 nav .nav-link:hover {
   color: var(--nav-item-link-hover);
 }
