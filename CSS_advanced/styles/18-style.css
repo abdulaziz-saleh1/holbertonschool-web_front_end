@@ -11,36 +11,30 @@ html {
   font-size: 62.5%;
 }
 
-/* CSS variables */
+/* CSS Variables */
 :root {
-  /* Colors */
   --color-primary: #d73953;
   --color-black: #090909;
   --color-white: #ffffff;
   --color-light-grey: #f3f3f3;
   --color-dark-grey: #353535;
 
-  /* Typography */
   --font-family-base: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --font-family-title: Raleway, "Helvetica Neue", Helvetica, Arial, sans-serif;
 
-  /* Font sizes */
   --font-size-small: 1.2rem;
   --font-size-medium: 1.6rem;
   --font-size-large: 1.8rem;
   --font-size-x-large: 2.3rem;
   --font-size-xx-large: 4.8rem;
 
-  /* Font weights */
   --font-weight-regular: 400;
   --font-weight-bold: 700;
 
-  /* Line heights */
   --line-height-small: 1.2;
   --line-height-base: 1.5;
   --line-height-big: 1.8;
 
-  /* Section layout */
   --section-header-align: center;
   --section-tagline-transform: uppercase;
   --section-title-margin: 0;
@@ -53,10 +47,9 @@ html {
   --section-footer-align: center;
   --footer-padding: 5rem 0 1rem;
 
-  /* Text color */
   --text-color: var(--color-black);
 
-  /* Navbar custom props for */
+  /* Task 18 - navbar variables */
   --nav-item-font-family: var(--font-family-title);
   --nav-item-font-weight: var(--font-weight-bold);
   --nav-item-font-size: var(--font-size-medium);
@@ -66,7 +59,7 @@ html {
   --nav-item-link-hover: var(--color-primary);
 }
 
-/* Anchor states */
+/* Links */
 a:link {
   color: var(--text-color);
   text-decoration: none;
@@ -81,7 +74,7 @@ a:active {
   background-color: var(--color-light-grey);
 }
 
-/* Body base styles */
+/* Body */
 body {
   color: var(--text-color);
   font-family: var(--font-family-base);
@@ -96,12 +89,12 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: var(--font-weight-bold);
 }
 
-/* Visually hidden */
+/* Hidden text */
 .visually-hidden {
   display: none;
 }
 
-/* Tagline and category */
+/* Tagline + category */
 .card-category {
   color: var(--color-primary);
 }
@@ -145,11 +138,14 @@ h1, h2, h3, h4, h5, h6 {
   margin-right: auto;
 }
 
-/* Navbar styles */
+/* === Task 18 Navbar === */
+
+/* navbar menu to right */
 .navbar-menu {
   float: right;
 }
 
+/* nav reset */
 nav {
   margin: 0;
   padding: 0;
@@ -157,6 +153,7 @@ nav {
   text-align: center;
 }
 
+/* nav-item */
 nav .nav-item {
   font-family: var(--nav-item-font-family);
   font-weight: var(--nav-item-font-weight);
@@ -166,11 +163,13 @@ nav .nav-item {
   margin: var(--nav-item-margin);
 }
 
+/* nav-link */
 nav .nav-link {
   display: block;
   padding: 0 var(--section-padding);
 }
 
+/* hover color */
 nav .nav-link:hover {
   color: var(--nav-item-link-hover);
 }
