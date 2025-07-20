@@ -1,43 +1,52 @@
+/* Apply universal box-sizing */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
+/* HTML base styles */
 html {
   scroll-behavior: smooth;
   font-size: 62.5%;
 }
 
+/* Define CSS variables */
 :root {
+  /* Colors */
   --color-primary: #d73953;
   --color-black: #090909;
   --color-white: #ffffff;
   --color-light-grey: #f3f3f3;
   --color-dark-grey: #353535;
 
+  /* Typography */
   --font-family-base: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --font-family-title: Raleway, "Helvetica Neue", Helvetica, Arial, sans-serif;
 
+  /* Font sizes */
   --font-size-small: 1.2rem;
   --font-size-medium: 1.6rem;
   --font-size-large: 1.8rem;
   --font-size-x-large: 2.3rem;
   --font-size-xx-large: 4.8rem;
 
+  /* Font weights */
   --font-weight-regular: 400;
   --font-weight-bold: 700;
 
+  /* Line heights */
   --line-height-small: 1.2;
   --line-height-base: 1.5;
   --line-height-big: 1.8;
 
+  /* Section layout variables */
   --section-header-align: center;
   --section-tagline-transform: uppercase;
-
   --section-title-margin: 0;
   --section-title-color: var(--color-black);
 
+  /* Padding variables */
   --section-padding: 5rem 0;
   --section-header-padding: 0 0 3rem;
   --section-body-padding: 0 0 3rem;
@@ -45,9 +54,11 @@ html {
   --section-footer-align: center;
   --footer-padding: 5rem 0 1rem;
 
+  /* Text color */
   --text-color: var(--color-black);
 }
 
+/* Anchor link states */
 a:link {
   color: var(--text-color);
   text-decoration: none;
@@ -65,6 +76,7 @@ a:active {
   background-color: var(--color-light-grey);
 }
 
+/* Base body styles */
 body {
   color: var(--text-color);
   font-family: var(--font-family-base);
@@ -73,37 +85,45 @@ body {
   line-height: var(--line-height-base);
 }
 
+/* Heading styles */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-family-title);
   font-weight: var(--font-weight-bold);
 }
 
+/* Visually hidden elements */
 .visually-hidden {
   display: none;
 }
 
+/* Category card text */
 .card-category {
   color: var(--color-primary);
 }
 
+/* Section container padding */
 .section {
   padding: var(--section-padding);
 }
 
+/* Section header styling */
 .section-header {
   text-align: var(--section-header-align);
   padding: var(--section-header-padding);
 }
 
+/* Section body styling */
 .section-body {
   padding: var(--section-body-padding);
 }
 
+/* Section footer styling */
 .section-footer {
   padding: var(--section-footer-padding);
   text-align: var(--section-footer-align);
 }
 
+/* Section title styles */
 .section-title {
   font-family: var(--font-family-title);
   font-size: var(--font-size-xx-large);
@@ -112,6 +132,7 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--section-title-color);
 }
 
+/* Section tagline styles */
 .section-tagline {
   color: var(--color-primary);
   font-family: var(--font-family-title);
@@ -119,12 +140,14 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: var(--font-weight-bold);
 }
 
+/* Container layout */
 .container {
   width: 960px;
   margin-left: auto;
   margin-right: auto;
 }
 
+/* Footer element styling */
 footer {
   padding: var(--footer-padding);
 }
