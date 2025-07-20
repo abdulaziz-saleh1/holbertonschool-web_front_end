@@ -101,7 +101,24 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--color-primary);
 }
 
-/* Section container padding */
+/* Section tagline styles */
+.section-tagline {
+  color: var(--color-primary);
+  font-family: var(--font-family-title);
+  text-transform: var(--section-tagline-transform);
+  font-weight: var(--font-weight-bold);
+}
+
+/* Section title styles */
+.section-title {
+  font-family: var(--font-family-title);
+  font-size: var(--font-size-xx-large);
+  font-weight: var(--font-weight-bold);
+  margin: var(--section-title-margin);
+  color: var(--section-title-color);
+}
+
+/* Section layout */
 .section {
   padding: var(--section-padding);
 }
@@ -123,21 +140,9 @@ h1, h2, h3, h4, h5, h6 {
   text-align: var(--section-footer-align);
 }
 
-/* Section title styles */
-.section-title {
-  font-family: var(--font-family-title);
-  font-size: var(--font-size-xx-large);
-  font-weight: var(--font-weight-bold);
-  margin: var(--section-title-margin);
-  color: var(--section-title-color);
-}
-
-/* Section tagline styles */
-.section-tagline {
-  color: var(--color-primary);
-  font-family: var(--font-family-title);
-  text-transform: var(--section-tagline-transform);
-  font-weight: var(--font-weight-bold);
+/* Footer class styling (not the footer tag!) */
+.footer {
+  padding: var(--footer-padding);
 }
 
 /* Container layout */
@@ -145,9 +150,4 @@ h1, h2, h3, h4, h5, h6 {
   width: 960px;
   margin-left: auto;
   margin-right: auto;
-}
-
-/* Footer element styling */
-footer {
-  padding: var(--footer-padding);
 }
