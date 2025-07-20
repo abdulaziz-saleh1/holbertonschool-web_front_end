@@ -1,10 +1,8 @@
 /* styles/18-style.css */
-
-/* First include all existing styles from 17-style.css */
 @import url('17-style.css');
 
 :root {
-    /* Define new custom properties for navbar */
+    /* Custom properties for navbar */
     --nav-item-font-family: var(--font-family-title);
     --nav-item-font-weight: var(--font-weight-bold);
     --nav-item-font-size: var(--font-size-medium);
@@ -14,11 +12,12 @@
     --nav-item-link-hover: var(--color-primary);
 }
 
-/* Navbar styles */
+/* Navbar menu */
 .navbar-menu {
     float: right;
 }
 
+/* Nav container */
 .nav {
     margin: 0;
     padding: 0;
@@ -26,6 +25,7 @@
     list-style: none;
 }
 
+/* Nav items */
 .nav .nav-item {
     font-family: var(--nav-item-font-family);
     font-weight: var(--nav-item-font-weight);
@@ -35,11 +35,13 @@
     margin: var(--nav-item-margin);
 }
 
+/* Nav links */
 .nav .nav-link {
     display: block;
-    padding: calc(1em / 2) 1em;
+    padding: calc(1rem / 2) 1rem;
 }
 
+/* Nav link hover state */
 .nav .nav-link:hover {
     color: var(--nav-item-link-hover);
 }
