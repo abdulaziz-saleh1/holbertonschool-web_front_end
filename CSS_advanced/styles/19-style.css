@@ -1,44 +1,38 @@
 @import url('18-style.css');
 
-/* Add section tagline margin variable */
 :root {
   --section-tagline-margin: 0;
 }
 
-/* Use section tagline margin */
 .section-tagline {
   margin: var(--section-tagline-margin);
 }
 
-/* Remove default list styles for row */
 ul.row {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-/* Column 1/3 styling */
 .col-1-3 {
   width: 33.33%;
   float: left;
   padding: 0.5rem;
 }
 
-/* Column 1/2 styling */
 .col-1-2 {
   width: 50%;
   float: left;
   padding: 0.5rem;
 }
 
-/* Footer copyright section */
 .footer-copyright {
   margin: 0;
   font-size: var(--font-size-small);
   color: var(--text-color);
 }
 
-/* Align ul inside footer to the right */
-footer ul {
+/* Fix here */ 
+ul.footer {
   text-align: right;
 }
