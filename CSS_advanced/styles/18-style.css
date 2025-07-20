@@ -1,0 +1,44 @@
+/* Float navbar-menu to the right */
+.navbar-menu {
+  float: right;
+}
+
+/* Style the nav element */
+nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+/* Style nav-item elements inside nav */
+nav .nav-item {
+  font-family: var(--font-family-title);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-medium);
+  letter-spacing: var(--nav-item-letter-spacing);
+  display: var(--nav-item-display);
+  margin: var(--nav-item-margin);
+}
+
+/* Style nav-link elements inside nav */
+nav .nav-link {
+  display: block;
+  padding: 0 var(--section-padding);
+}
+
+/* Change color on hover */
+nav .nav-link:hover {
+  color: var(--nav-item-link-hover);
+}
+
+/* Define custom properties */
+:root {
+  --nav-item-font-family: var(--font-family-title);
+  --nav-item-font-weight: var(--font-weight-bold);
+  --nav-item-font-size: var(--font-size-medium);
+  --nav-item-letter-spacing: 0.04em;
+  --nav-item-display: inline-block;
+  --nav-item-margin: 3rem 0 0 0;
+  --nav-item-link-hover: var(--color-primary);
+}
